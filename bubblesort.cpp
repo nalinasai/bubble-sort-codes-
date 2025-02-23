@@ -1,13 +1,16 @@
-#include <iostream>
-using namespace std;
+#include <iostream>  // Includes the input-output stream library for printing to the console
+using namespace std; // To use standard C++ library functions like cout, endl without needing std:: prefix
 
 int main(){
+
     cout<< "before sorted"<<endl;
+    //initialize the array
     int array[5] = {2,4,1,6,3};
 
     for(int h=0; h<5; h++){
         cout << array[h]<<" ";
     }
+    //go to the next line
     cout << endl;
 
     for (int i=0; i<4; i++){
