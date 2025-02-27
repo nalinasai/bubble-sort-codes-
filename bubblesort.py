@@ -1,21 +1,21 @@
-unsorted_list = [2,5,1,8,4]
-print("Unsorted list: ",*unsorted_list)
 
-print("After sorting: ")
+print("Enter the input: ",end="")
 
-size = len(unsorted_list)
+stringlist = input().split()
 
+integerlist = list(map(int,stringlist))
+
+print("After sorting: ",end="")
 
 # Implementing Bubble Sort algorithm
-for i in range(size-1):
-    for j in range(size-i-1):
+for i in range(len(integerlist)-1):
+    for j in range(len(integerlist)-i-1):
         # Compare current element with the next element
-        if(unsorted_list[j]>unsorted_list[j+1]):
+        if(integerlist[j]>integerlist[j+1]):
             # Swap the elements if they are in the wrong order
-            unsorted_list[j],unsorted_list[j+1] = unsorted_list[j+1],unsorted_list[j]
+            integerlist[j],integerlist[j+1] = integerlist[j+1],integerlist[j]
         else:
             continue
 
-for element in unsorted_list:
+for element in integerlist:
     print(element, end=" ")
-
